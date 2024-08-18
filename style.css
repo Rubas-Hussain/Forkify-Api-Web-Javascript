@@ -1,0 +1,243 @@
+:root {
+    --background-color: #f9f5f2;
+    --pink-color: #f4a189;
+    --white-color: #ffffff;
+    --cutlery-icon-color: #FBFDFC;
+    --dark-pink-color: #E1AEAB;
+    --grey-color: #E3DEDB;
+    --black-color: #564A46;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: var(--background-color);
+    overflow: hidden;
+}
+
+/* header section */
+#header {
+    height: 10vh;
+    margin: 30px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    list-style: none;
+    /* border: 2px solid var(--border-color); */
+    display: flex;
+    align-items: center;
+}
+
+.headerListContainer1 {
+    margin-right: 15px;
+}
+
+.headerListContainer2 {
+    margin-right: 26vw;
+}
+
+.headerListContainer3 {
+    margin-right: 120px;
+    display: flex;
+    position: relative;
+}
+
+.headerListContainer4 {
+    margin-right: 7px;
+}
+
+.searchField {
+    border: none;
+    border-radius: 25px;
+    height: 45px;
+    width: 380px;
+    background-color: var(--white-color);
+    padding-left: 13px;
+    font-size: 13px;
+}
+
+.searchField:focus {
+    outline: none;
+    border: none;
+}
+
+.searchField::placeholder {
+    color: var(--grey-color);
+}
+
+.fa-search {
+    background-color: var(--pink-color);
+    height: 12px;
+    width: 15px;
+    margin-right: 4px;
+    color: var(--cutlery-icon-color);
+}
+
+.searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1000;
+    right: 0;
+    height: 45px;
+    width: 120px;
+    background-color: var(--pink-color);
+    border-radius: 25px;
+    font-size: 13px;
+    color: var(--cutlery-icon-color);
+}
+
+.headerListContainer5 {
+    margin-right: 20px;
+}
+
+.headerListContainer6 {
+    margin-right: 7px;
+}
+
+.headerListContainer7 {
+    margin-right: 20px;
+}
+
+.fa-cutlery {
+    color: var(--cutlery-icon-color);
+    margin-left: 7px;
+    margin-top: 3px;
+    background-color: var(--pink-color);
+    height: 20px;
+    width: 20px;
+}
+
+#cutleryIconContainer {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pink-color);
+    border-radius: 20px;
+}
+
+.fa-pencil-square-o {
+    color: var(--dark-pink-color);
+}
+
+.fa-bookmark-o {
+    color: var(--dark-pink-color);
+}
+
+
+
+/* body section */
+
+#body{
+    display: flex;
+}
+
+#itemsListContainer {
+    height: 87vh; /* Set a fixed height for the container */
+    width: 30vw;
+    background-color: var(--white-color) !important;
+    padding: 20px; 
+    overflow-y: auto; 
+}
+
+#itemsListContainer::-webkit-scrollbar {
+    display: none;  /* WebKit-based browsers */
+}
+
+.itemsListTile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;    
+    height: 100px;
+    /* padding: 10px; */
+}
+
+.itemsListTile:hover {
+   cursor: pointer;
+}
+
+.textContentContainer {
+    margin-left: 10px;
+}
+
+.title{
+    font-size: 24px;
+    color: var(--pink-color);
+}
+.subTitle{
+    font-size: 14px;
+    color: var(--black-color);
+    /* overflow: hidden;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    /* display: -webkit-box; */     
+    
+}
+
+.circularImageContainer {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+}
+
+/* description section in body*/
+
+#itemsDescContainer{
+    width: 70vw;
+    height: 550px;
+    position: relative;
+    
+    overflow-y: auto; 
+    
+}
+
+.imageDescContainer{
+    width: 70vw;
+    height: 350px;
+}
+
+.descTitleContainer{
+    position: absolute;
+    right: 40%;
+    bottom: 32%;
+    font-weight: 600;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 50px;
+    width: 200px; */
+    padding: 10px;
+    font-size: 25px;
+    background-color: var(--pink-color);
+}
+
+.itemDetails{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-evenly;
+}
+
+.fa-clock{
+    color: var(--dark-pink-color);
+    padding-right: 4px;
+}
+.fa-person{
+    color: var(--dark-pink-color);
+    padding-right: 4px;
+}
+.fa-plus{
+    color: var(--dark-pink-color);
+    padding-right: 14px;
+}
+.fa-minus{
+    color: var(--dark-pink-color);
+    padding-right: 24px;
+}
